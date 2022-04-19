@@ -160,4 +160,5 @@
 -(void)onLocalizationNotAvailable;
 -(void)onLocalizationError:(NSString*)error;
 
+-(void)onAdTrigger;
 @end
