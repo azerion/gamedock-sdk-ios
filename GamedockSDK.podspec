@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'GamedockSDK'
-  s.version          = '5.1.0'
+  s.version          = '5.1.1'
   s.summary          = 'Gamedock ios sdk'
  
   s.description      = <<-DESC
@@ -28,7 +28,7 @@ iOS SDK of the Gamedock
     LICENSE
   }
   s.author           = 'Gamedock'
-  s.source           = { :git => 'https://github.com/azerion/gamedock-sdk-ios.git', :tag => '2.0.0' }
+  s.source           = { :git => 'https://github.com/azerion/gamedock-sdk-ios.git', :tag => '2.1.0' }
  
   s.ios.deployment_target   = '9.0'
 
@@ -45,6 +45,9 @@ iOS SDK of the Gamedock
   s.requires_arc     = true
   s.static_framework = true
 
+  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-Wl,-U,_UnitySendMessage' }
+  s.user_target_xcconfig = { 'OTHER_LDFLAGS' => '-Wl,-U,_UnitySendMessage' }
+
 
   s.user_target_xcconfig = {
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
@@ -52,10 +55,6 @@ iOS SDK of the Gamedock
   s.pod_target_xcconfig = {
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
   }
-
-
-
- 
 
 
 end
