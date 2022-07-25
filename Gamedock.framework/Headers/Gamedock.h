@@ -52,8 +52,7 @@
 #import "GAI.h"
 #import <Gamedock/GamedockDelegate.h>
 
-
-#define GAMEDOCK_SDK_VERSION @"5.2.1"
+#define GAMEDOCK_SDK_VERSION @"5.2.2"
 
 @class Gamedock;
 @class InitializationOptions;
