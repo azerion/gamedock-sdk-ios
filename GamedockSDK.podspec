@@ -29,13 +29,14 @@ iOS SDK of the Gamedock
   }
   s.author           = 'Gamedock'
 
-  s.source           = { :git => 'https://github.com/azerion/gamedock-sdk-ios.git', :tag => '3.2.0' }
+  s.source           = { :git => 'https://github.com/azerion/gamedock-sdk-ios.git', :tag => '3.3.0' }
 
  
   s.ios.deployment_target   = '9.0'
 
   s.public_header_files = "Gamedock.framework/Headers/*.h"
   s.source_files = "Gamedock.framework/Headers/*.h"
+  s.resources = "Gamedock.framework/GamedockResources.bundle"
   s.vendored_frameworks = "Gamedock.framework"
   s.platform = :ios
 
@@ -47,8 +48,8 @@ iOS SDK of the Gamedock
   s.requires_arc     = true
   s.static_framework = true
 
-  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-Wl,-U,_UnitySendMessage' }
-  s.user_target_xcconfig = { 'OTHER_LDFLAGS' => '-Wl,-U,_UnitySendMessage' }
+  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '$(inherited) -Wl,-U,_UnitySendMessage' }
+  s.user_target_xcconfig = { 'OTHER_LDFLAGS' => '$(inherited) -Wl,-U,_UnitySendMessage' }
 
 
   s.user_target_xcconfig = {
