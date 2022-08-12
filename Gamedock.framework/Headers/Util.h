@@ -27,5 +27,6 @@
 +(UIViewController*)absoluteTopMostController;
 
 +(NSString*)getDeviceModel;
++(NSBundle *)getResourcesBundle;
 
 @end

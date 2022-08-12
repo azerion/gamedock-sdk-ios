@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'GamedockSDK'
-  s.version          = '5.2.4'
+  s.version          = '5.2.5'
   s.summary          = 'Gamedock ios sdk'
  
   s.description      = <<-DESC
@@ -29,16 +29,16 @@ iOS SDK of the Gamedock
   }
   s.author           = 'Gamedock'
 
-  s.source           = { :git => 'https://github.com/azerion/gamedock-sdk-ios.git', :tag => '3.3.2' }
+  s.source           = { :git => 'https://github.com/azerion/gamedock-sdk-ios.git', :tag => '3.3.3' }
 
  
   s.ios.deployment_target   = '9.0'
 
   s.public_header_files = "Gamedock.framework/Headers/*.h"
   s.source_files = "Gamedock.framework/Headers/*.h"
-  s.resources = "Gamedock.framework/*.{png,storyboardc,bundle,json,momd}"
+  s.resources = "Gamedock.framework/**/*.{png,storyboardc,bundle,json,momd,mom,omo}"
    s.resource_bundles = {
-    'GamedockSDK' => ['Gamedock.framework/*.{png,storyboardc,bundle,json,momd}']
+    'GamedockSDK' => ['Gamedock.framework/**/*.{png,storyboardc,bundle,json,momd,mom,omo}']
   }
   s.vendored_frameworks = "Gamedock.framework"
   s.platform = :ios
