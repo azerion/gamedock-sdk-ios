@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'GamedockSDK'
-  s.version          = '5.2.5'
+  s.version          = '5.2.6'
   s.summary          = 'Gamedock ios sdk'
  
   s.description      = <<-DESC
@@ -29,7 +29,7 @@ iOS SDK of the Gamedock
   }
   s.author           = 'Gamedock'
 
-  s.source           = { :git => 'https://github.com/azerion/gamedock-sdk-ios.git', :tag => '3.3.3' }
+  s.source           = { :git => 'https://github.com/azerion/gamedock-sdk-ios.git', :tag => '3.3.4' }
 
  
   s.ios.deployment_target   = '9.0'
