@@ -52,12 +52,12 @@
 #import "GAI.h"
 #import <Gamedock/GamedockDelegate.h>
 
-#define GAMEDOCK_SDK_VERSION @"5.2.7"
+
+#define GAMEDOCK_SDK_VERSION @"5.3.0"
 
 @class Gamedock;
 @class InitializationOptions;
 @class UserDataTransaction;
-@class TieredEventProgress;
 
 
 @interface Gamedock : NSObject {

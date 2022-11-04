@@ -29,4 +29,9 @@
 +(NSString*)getDeviceModel;
 +(NSBundle *)getResourcesBundle;
 
++(NSString *)createEncodedMD5:(NSString *)eventname
+                 withBundleId:(NSString *)bundleId
+                   withUserId:(NSString *)userId
+                           ts:(NSString *)ts;
+
 @end

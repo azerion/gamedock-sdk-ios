@@ -7,7 +7,6 @@
 //
 
 @class ImageContext;
-@class TieredEventProgress;
 
 @protocol GamedockDelegate
 
@@ -132,13 +131,6 @@
 // Age gate
 -(void)ageGateStatus:(BOOL)passed withAge:(nonnull NSString*)age withCheckPrivacyPolicy:(BOOL)checkPrivacyPolicy;
 
-// Tiered events
--(void)tieredEventsAvailable;
--(void)tieredEventsNotAvailable;
--(void)tieredEventUpdated:(nonnull TieredEventProgress*)tieredEventProgress;
--(void)tieredEventProgressOpen;
--(void)tieredEventProgressClosed;
--(void)tieredEventsError:(nonnull NSString*)error;
 
 // Asset bundles
 -(void)assetBundlesAvailable:(nonnull NSString*)assetBundlesJSON;

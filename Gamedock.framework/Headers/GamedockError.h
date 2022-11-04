@@ -72,9 +72,6 @@
 +(GamedockError*)GameDataResetError;
 +(GamedockError*)UserDataResetError;
 
-+(GamedockError*)TieredEventShowProgressError;
-+(GamedockError*)TieredEventUpdateProgressError;
-+(GamedockError*)TieredEventClaimTierError;
 
 +(GamedockError*)UniqueItemAddError;
 

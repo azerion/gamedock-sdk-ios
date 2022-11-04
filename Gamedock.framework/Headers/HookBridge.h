@@ -321,17 +321,6 @@ extern "C" {
     
     void preloadItemAndBundleImagesNative();
     
-    // --- Tiered events ---
-    
-    void requestTieredEventsNative();
-    
-    char* getAllTieredEventsNative();
-    
-    char* getTieredEventProgressNative(int tieredEventId);
-    
-    void showTieredEventProgressNative(int tieredEventId);
-    
-    void claimTierRewardsNative(int tieredEventId, int tierId);
     
     // --- Login ---
     
@@ -406,6 +395,7 @@ extern "C" {
     char* getLocalizationDictNative(char* key, char* defaultValue, const char* args);
     
     char* getConsentStatus();
+    
 }
 
 #endif
