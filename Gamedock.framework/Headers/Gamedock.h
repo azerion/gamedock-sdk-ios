@@ -53,7 +53,7 @@
 #import <Gamedock/GamedockDelegate.h>
 
 
-#define GAMEDOCK_SDK_VERSION @"5.3.1"
+#define GAMEDOCK_SDK_VERSION @"5.3.2"
 
 @class Gamedock;
 @class InitializationOptions;
@@ -168,6 +168,8 @@
  * Shows a simple dialog, useful while debugging
  */
 +(void)showDialog:(NSString*)title withMessage:(NSString*)message withOkButton:(NSString*)okButtonText handler:(void (^ __nullable)(UIAlertAction *action))handler;
+
++(nonnull NSString*)getConsentStatus;
 
 
 @end
