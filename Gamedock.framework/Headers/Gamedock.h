@@ -53,7 +53,7 @@
 #import <Gamedock/GamedockDelegate.h>
 
 
-#define GAMEDOCK_SDK_VERSION @"5.3.2"
+#define GAMEDOCK_SDK_VERSION @"5.3.3"
 
 @class Gamedock;
 @class InitializationOptions;
