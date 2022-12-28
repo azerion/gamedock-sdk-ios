@@ -29,7 +29,7 @@ iOS SDK of the Gamedock
   }
   s.author           = 'Gamedock'
 
-  s.source           = { :git => 'https://github.com/azerion/gamedock-sdk-ios.git', :tag => '3.4.4' }
+  s.source           = { :git => 'https://github.com/azerion/gamedock-sdk-ios.git', :tag => '3.4.5' }
 
  
   s.ios.deployment_target   = '9.0'
