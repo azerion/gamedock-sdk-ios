@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'GamedockSDK'
-  s.version          = '5.3.4'
+  s.version          = '5.3.5'
   s.summary          = 'Gamedock ios sdk'
  
   s.description      = <<-DESC
@@ -29,10 +29,12 @@ iOS SDK of the Gamedock
   }
   s.author           = 'Gamedock'
 
-  s.source           = { :git => 'https://github.com/azerion/gamedock-sdk-ios.git', :tag => '3.4.5' }
+  s.source           = { :git => 'https://github.com/azerion/gamedock-sdk-ios.git', :tag => '3.4.6' }
 
- 
-  s.ios.deployment_target   = '9.0'
+  s.ios.deployment_target = '10.0'
+  s.xcconfig = { 
+   'IPHONEOS_DEPLOYMENT_TARGET' => "10.0" 
+  }
 
   s.public_header_files = "Gamedock.framework/Headers/*.h"
   s.source_files = "Gamedock.framework/Headers/*.h"
@@ -41,19 +43,22 @@ iOS SDK of the Gamedock
     'GamedockSDK' => ['Gamedock.framework/**/*.{png,storyboardc,bundle,json,momd,mom,omo}']
   }
   s.vendored_frameworks = "Gamedock.framework"
-  s.platform = :ios
-
-  s.xcconfig = { 
-   'IPHONEOS_DEPLOYMENT_TARGET' => "9.0" 
-  }
- 
-
+  
   s.requires_arc     = true
   s.static_framework = true
 
   s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '$(inherited) -Wl,-U,_UnitySendMessage' }
   s.user_target_xcconfig = { 'OTHER_LDFLAGS' => '$(inherited) -Wl,-U,_UnitySendMessage' }
 
+  s.dependency 'FirebaseAnalytics', '>= 9.0.0', '< 10.5.0'
+  s.dependency 'FirebaseCrashlytics', '>= 9.0.0', '< 10.5.0'
+  s.dependency 'FirebaseDynamicLinks', '>= 9.0.0', '< 10.5.0'
+  s.dependency 'FirebaseInstallations', '>= 9.0.0', '< 10.5.0'
+  s.dependency 'FirebaseMessaging', '>= 9.0.0', '< 10.5.0'
+  s.dependency 'FirebaseRemoteConfig', '>= 9.0.0', '< 10.5.0'
+  s.dependency 'AppAuth'
+
+  s.swift_versions = '5.3'
 
   s.user_target_xcconfig = {
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
