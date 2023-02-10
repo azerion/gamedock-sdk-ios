@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'GamedockSDK'
-  s.version          = '5.3.5'
+  s.version          = '5.3.6'
   s.summary          = 'Gamedock ios sdk'
  
   s.description      = <<-DESC
@@ -29,7 +29,7 @@ iOS SDK of the Gamedock
   }
   s.author           = 'Gamedock'
 
-  s.source           = { :git => 'https://github.com/azerion/gamedock-sdk-ios.git', :tag => '3.4.6' }
+  s.source           = { :git => 'https://github.com/azerion/gamedock-sdk-ios.git', :tag => '3.4.7' }
 
   s.ios.deployment_target = '10.0'
   s.xcconfig = { 
@@ -57,6 +57,7 @@ iOS SDK of the Gamedock
   s.dependency 'FirebaseMessaging', '>= 9.0.0', '< 10.5.0'
   s.dependency 'FirebaseRemoteConfig', '>= 9.0.0', '< 10.5.0'
   s.dependency 'AppAuth'
+  s.dependency 'GoogleUserMessagingPlatform'
 
   s.swift_versions = '5.3'
 
