@@ -404,6 +404,7 @@ extern "C" {
     char* getLocalizationArgsNative(char* key, char* defaultValue, const char* args);
     
     char* getLocalizationDictNative(char* key, char* defaultValue, const char* args);
+    
 }
 
 #endif

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'GamedockSDK'
-  s.version          = '5.2.1'
+  s.version          = '5.2.8'
   s.summary          = 'Gamedock ios sdk'
  
   s.description      = <<-DESC
@@ -28,12 +28,18 @@ iOS SDK of the Gamedock
     LICENSE
   }
   s.author           = 'Gamedock'
-  s.source           = { :git => 'https://github.com/azerion/gamedock-sdk-ios.git', :tag => '3.1.0' }
+
+  s.source           = { :git => 'https://github.com/azerion/gamedock-sdk-ios.git', :tag => '5.2.8' }
+
  
   s.ios.deployment_target   = '9.0'
 
   s.public_header_files = "Gamedock.framework/Headers/*.h"
   s.source_files = "Gamedock.framework/Headers/*.h"
+  s.resources = "Gamedock.framework/**/*.{png,storyboardc,bundle,json,momd,mom,omo}"
+   s.resource_bundles = {
+    'GamedockSDK' => ['Gamedock.framework/**/*.{png,storyboardc,bundle,json,momd,mom,omo}']
+  }
   s.vendored_frameworks = "Gamedock.framework"
   s.platform = :ios
 
@@ -45,8 +51,8 @@ iOS SDK of the Gamedock
   s.requires_arc     = true
   s.static_framework = true
 
-  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-Wl,-U,_UnitySendMessage' }
-  s.user_target_xcconfig = { 'OTHER_LDFLAGS' => '-Wl,-U,_UnitySendMessage' }
+  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '$(inherited) -Wl,-U,_UnitySendMessage' }
+  s.user_target_xcconfig = { 'OTHER_LDFLAGS' => '$(inherited) -Wl,-U,_UnitySendMessage' }
 
 
   s.user_target_xcconfig = {

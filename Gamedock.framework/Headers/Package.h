@@ -13,6 +13,9 @@
 @property (strong, nonatomic) NSDictionary *properties;
 @property (strong, nonatomic) NSString *packageId;
 @property (strong, nonatomic) NSString *discountLabel;
+@property (strong, nonatomic) NSString *displayName;
+@property (strong, nonatomic) NSString *displayDescription;
+@property (strong, nonatomic) NSString *imageUrl;
 @property (strong, nonatomic) NSMutableArray *items; // Array of PackageItem's
     
 -(id)initWithDictionary:(NSDictionary*)dict;
