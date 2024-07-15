@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'GamedockSDK'
-  s.version          = '5.3.7'
+  s.version          = '5.3.8'
   s.summary          = 'Gamedock ios sdk'
  
   s.description      = <<-DESC
@@ -29,7 +29,7 @@ iOS SDK of the Gamedock
   }
   s.author           = 'Gamedock'
 
-  s.source           = { :git => 'https://github.com/azerion/gamedock-sdk-ios.git', :tag => '3.4.8' }
+  s.source           = { :git => 'https://github.com/azerion/gamedock-sdk-ios.git', :tag => "#{s.version}" }
 
   s.ios.deployment_target = '10.0'
   s.xcconfig = { 
@@ -50,15 +50,7 @@ iOS SDK of the Gamedock
   s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '$(inherited) -Wl,-U,_UnitySendMessage' }
   s.user_target_xcconfig = { 'OTHER_LDFLAGS' => '$(inherited) -Wl,-U,_UnitySendMessage' }
 
-  s.dependency 'FirebaseAnalytics', '>= 9.0.0', '< 10.5.0'
-  s.dependency 'FirebaseCrashlytics', '>= 9.0.0', '< 10.5.0'
-  s.dependency 'FirebaseDynamicLinks', '>= 9.0.0', '< 10.5.0'
-  s.dependency 'FirebaseInstallations', '>= 9.0.0', '< 10.5.0'
-  s.dependency 'FirebaseMessaging', '>= 9.0.0', '< 10.5.0'
-  s.dependency 'FirebaseRemoteConfig', '>= 9.0.0', '< 10.5.0'
   s.dependency 'AppAuth'
-  s.dependency 'GoogleUserMessagingPlatform'
-
   s.framework  = 'GameKit'
 
   s.swift_versions = '5.3'
